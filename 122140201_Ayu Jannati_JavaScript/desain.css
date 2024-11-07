@@ -1,0 +1,74 @@
+/* Style */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #87CEEB, #1E3A8A);
+}
+
+/* Styling untuk container form */
+.form-container {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Styling untuk judul */
+h2 {
+    text-align: center;
+    color: #1E3A8A;
+}
+
+/* Styling untuk label dan input */
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Styling untuk input dan dropdown */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Styling tombol submit */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #1E3A8A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Efek hover pada tombol */
+button:hover {
+    background-color: #0F265A;
+}
+
+/* Styling pesan error dan feedback */
+.error, .feedback {
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+
+.error {
+    color: red;
+}
+
+.feedback {
+    color: green;
+}

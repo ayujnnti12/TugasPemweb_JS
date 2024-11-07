@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Lomba</title>
+    <link rel="stylesheet" href="desain.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Pendaftaran Lomba IT'S</h2>
+        <form id="registrationForm">
+            <!-- Input untuk Username -->
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <small class="error" id="usernameError"></small>
+
+            <!-- Input untuk Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <small class="feedback" id="emailFeedback"></small>
+            <small class="error" id="emailError"></small>
+
+            <!-- Input untuk Password -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <small class="feedback" id="passwordStrength"></small>
+            <small class="error" id="passwordError"></small>
+
+            <!-- Input untuk Konfirmasi Password -->
+            <label for="confirmPassword">Konfirmasi Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <small class="feedback" id="confirmPasswordFeedback"></small>
+            <small class="error" id="confirmPasswordError"></small>
+
+            <!-- Dropdown untuk Kategori Perlombaan -->
+            <label for="category">Kategori Perlombaan</label>
+            <select id="category" name="category">
+                <option value="desain">Desain Grafis</option>
+                <option value="uiux">UI/UX</option>
+                <option value="dataMining">Data Mining</option>
+                <option value="webBlog">Website/Blog</option>
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+
+    <!-- Validasi Formulir -->
+    <script src="script.js"></script>
+</body>
+</html>
